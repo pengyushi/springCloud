@@ -1,0 +1,7 @@
+server:
+  port: 7901
+spring:
+  application:
+    name: prder
+order:
+  url: http://localhost:7900/user/

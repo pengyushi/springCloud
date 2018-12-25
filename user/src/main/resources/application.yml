@@ -1,0 +1,8 @@
+# 程序端口号 springboot 建议使用yml文件
+server:
+  port: 7900
+spring:
+  application:
+    name: user # 应用名称也就是别名
+
+
