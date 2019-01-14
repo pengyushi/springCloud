@@ -4,5 +4,7 @@ server:
 spring:
   application:
     name: user # 应用名称也就是别名
-
-
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:123@localhost:10000/eureka/ # curl 风格

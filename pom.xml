@@ -11,6 +11,7 @@
     <modules>
         <module>user</module>
         <module>order</module>
+        <module>eureka</module>
     </modules>
 <!-- 将项目声明城springboot 项目-->
     <parent>
@@ -18,6 +19,19 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.10.RELEASE</version>
     </parent>
+    <!--将项目变为spring spring cloud-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Edgware.SR2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
 
         <dependency>
@@ -39,6 +53,7 @@
         </dependency>
 
     </dependencies>
+
 
     <build>
         <plugins>

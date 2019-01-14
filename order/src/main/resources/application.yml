@@ -2,6 +2,10 @@ server:
   port: 7901
 spring:
   application:
-    name: prder
+    name: order
 order:
   url: http://localhost:7900/user/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:123@localhost:10000/eureka/ # curl 风格
