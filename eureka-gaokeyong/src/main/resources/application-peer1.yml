@@ -1,0 +1,22 @@
+#高可用eureka
+spring:
+  application:
+    name: EUREKA-HA
+  profiles:
+    active: peer1
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: peer1
+  client:
+
+    serviceUrl:
+      defaultZone: http://user:123@peer2:8762/eureka/,http://user:123@peer3:8763/eureka/
+security:
+  basic:
+    enabled: true #开启安全配置,也就是需要密码,如果不需要设置为 false 即可,注意,这个参数必须放在 application.yml 中,不允许放在 bootstrap.yml
+  user:
+    name: user
+    password: 123 #在配置了用户名和密码后,我们可以修改地址的访问风格为 curl 风格
