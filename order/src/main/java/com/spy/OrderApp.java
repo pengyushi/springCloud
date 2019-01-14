@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
  * Created by lenovo on 2018/12/25.
  */
 @SpringBootApplication
-@EnableEurekaClient
+@EnableEurekaClient//将当前项目标记为 eureka 客户端
 public class OrderApp {
 
     @Bean// 相当于 xml中的 bean标签

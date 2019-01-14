@@ -3,6 +3,7 @@ server:
   #因为当前的 eureka是单机的 所以我们需要做一些配置
 eureka:
   client:
+  #表示为单机模式
     register-with-eureka: false
     fetch-registry: false
     serviceUrl:
