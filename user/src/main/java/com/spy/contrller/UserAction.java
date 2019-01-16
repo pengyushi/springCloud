@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class UserAction {
+
+
     @Autowired
     private EurekaClient eurekaClient;
 
@@ -34,4 +36,6 @@ public class UserAction {
         InstanceInfo user = eurekaClient.getNextServerFromEureka("USER", false);
         return user.getHomePageUrl();
     }
+
+
 }

@@ -14,6 +14,7 @@
         <module>eureka</module>
         <module>ribbon</module>
         <module>eureka-gaokeyong</module>
+        <module>feign</module>
     </modules>
 <!-- 将项目声明城springboot 项目-->
     <parent>

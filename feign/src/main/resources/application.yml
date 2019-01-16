@@ -1,9 +1,10 @@
-# 程序端口号 springboot 建议使用yml文件
 server:
-  port: 7905
+  port: 7910
 spring:
   application:
-    name: user # 应用名称也就是别名
+    name: feign
+order:
+  url: http://localhost:7900/user/
 eureka:
   client:
     serviceUrl:

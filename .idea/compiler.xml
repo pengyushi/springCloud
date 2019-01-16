@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka" />
         <module name="eureka-gaokeyong" />
+        <module name="feign" />
         <module name="order" />
         <module name="ribbon" />
         <module name="user" />
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="eureka" target="1.8" />
       <module name="eureka-gaokeyong" target="1.8" />
+      <module name="feign" target="1.8" />
       <module name="order" target="1.8" />
       <module name="ribbon" target="1.8" />
       <module name="springCloud" target="1.8" />
