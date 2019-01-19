@@ -15,6 +15,10 @@
         <module>ribbon</module>
         <module>eureka-gaokeyong</module>
         <module>feign</module>
+        <module>Hystrix</module>
+        <module>feign-hystrix</module>
+        <module>hystrixDashBoard</module>
+        <module>zuul</module>
     </modules>
 <!-- 将项目声明城springboot 项目-->
     <parent>

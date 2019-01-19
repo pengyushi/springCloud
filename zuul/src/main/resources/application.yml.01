@@ -1,0 +1,20 @@
+# 程序端口号 springboot 建议使用yml文件
+server:
+  port: 7803
+spring:
+  application:
+    name: zuul # 应用名称也就是别名
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://user:123@localhost:10000/eureka/ # curl 风格
+  instance:
+    prefer-ip-address: true #显示 ip
+security: #配置访问 zuul 的 routes 的使用
+  user:
+    name: user
+    password: 123
+zuul:
+  routes: #配置路由映射
+    user: /spy/**  #user 服务的名字  后面是改成相应的路径
+  ignored-services: order # zull 自动代理 所有 eureka 上的服务 如果不想代理 就配置这个 order是服务名字 多个以 , 分割
