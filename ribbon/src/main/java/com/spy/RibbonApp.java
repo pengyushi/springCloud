@@ -2,6 +2,7 @@ package com.spy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.context.annotation.Bean;
@@ -20,6 +21,7 @@ import org.springframework.web.client.RestTemplate;
 public class RibbonApp {
 
     @Bean// 相当于 xml中的 bean标签
+    @LoadBalanced //需要添加这个 否则会出错
     public RestTemplate get(){
         return new RestTemplate();
 
